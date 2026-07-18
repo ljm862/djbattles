@@ -6,5 +6,9 @@ choiceButtons.forEach((button) => {
 
 function handleChoiceClick({ target }) {
   const choice = target.textContent;
-  alert(`You selected ${choice}`);
+  if (window.confirm(`You selected ${choice}, are you sure?`)) {
+    alert("Thanks for submitting!");
+  } else {
+    alert("Choose Again!");
+  }
 }
