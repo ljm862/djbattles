@@ -34,6 +34,11 @@ function createRoundButtons() {
 
       const container = document.querySelector(`[container-id="${roundId}"]`);
 
+      if (container.dataset.loaded === "false") {
+        populateContainer(container);
+        container.dataset.loaded = "true";
+      }
+
       container.classList.toggle("hidden");
       container.classList.toggle("active-container");
     });
@@ -52,7 +57,7 @@ function createRoundViews() {
     heading.textContent = `Round: ${round}`;
     container.appendChild(heading);
 
-    populateContainer(container);
+    container.dataset.loaded = "false";
     document.body.appendChild(container);
   });
 }
@@ -108,6 +113,7 @@ function populateBattleFrames(battleContainer, battle) {
     const src = song.replace("watch?v=", "embed/");
     const attributes = { src, referrerpolicy };
     const iframe = document.createElement("iframe");
+    iframe.loading = "lazy";
 
     setAttributes(iframe, attributes);
     battleContainer.appendChild(iframe);
