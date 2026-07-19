@@ -39,3 +39,28 @@ iframe {
   margin-right: 5px;
   height: 30px;
 }
+
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #e5e5e5;
+  border-top: 6px solid #007bff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

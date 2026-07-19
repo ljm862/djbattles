@@ -121,7 +121,12 @@ async function handleVoteClick({ target }) {
 
   const vote = target.textContent;
   if (window.confirm(`You voted for: ${vote}. Are you sure?`)) {
+    const loader = document.getElementById("loading");
+
+    loader.style.display = "flex";
     const voteSuccessful = await handleSubmit(vote, name);
+    loader.style.display = "none";
+
     if (voteSuccessful) {
       alert("Thanks for submitting!");
     } else {
