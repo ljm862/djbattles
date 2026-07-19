@@ -83,7 +83,10 @@ function populateVotingButtons(container, PersonA, PersonB) {
   votingContainer.classList.add("voting-container");
 
   const votingButtonA = document.createElement("button");
+  votingButtonA.setAttribute("voting-button-id", 1);
+
   const votingButtonB = document.createElement("button");
+  votingButtonB.setAttribute("voting-button-id", 2);
 
   votingButtonA.textContent = `Playlist - ${useRealName ? PersonA : "A"}`;
   votingButtonB.textContent = `Playlist - ${useRealName ? PersonB : "B"}`;
@@ -124,14 +127,13 @@ async function handleVoteClick({ target }) {
     const loader = document.getElementById("loading");
 
     loader.style.display = "flex";
-    const voteSuccessful = await handleSubmit(vote, name);
-    loader.style.display = "none";
-
+    const voteSuccessful = await handleSubmit(target.getAttribute("voting-button-id"), name);
     if (voteSuccessful) {
       alert("Thanks for submitting!");
     } else {
       alert("Please try again and contact the admin if the issue persists.");
     }
+    loader.style.display = "none";
   } else {
     alert("Choose Again!");
   }
