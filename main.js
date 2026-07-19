@@ -1,10 +1,12 @@
 import data from "./example.json" with { type: "json" };
 
+const key = "AKfycbz8wAfT4ccaIi4sUEoAOKIkZc4qWta1fnbyZ9iK-fVKImdmow5k0By1xedi9H7YoVjr";
 const roundIds = new Set(data.map(({ RoundId }) => RoundId));
 const roundButtons = document.querySelector("#round-buttons");
-const container = document.querySelector("#container");
 const referrerpolicy = "strict-origin-when-cross-origin";
 const useRealName = false;
+const existingName = localStorage.getItem("name");
+const nameInput = document.querySelector("input");
 
 let activeRound;
 
@@ -109,15 +111,22 @@ function populateBattleFrames(battleContainer, battle) {
   });
 }
 
-function handleVoteClick({ target }) {
+async function handleVoteClick({ target }) {
   const name = document.querySelector("input").value;
+
   if (!name) {
     alert("Please enter a name!");
     return;
   }
+
   const vote = target.textContent;
   if (window.confirm(`You voted for: ${vote}. Are you sure?`)) {
-    alert("Thanks for submitting!");
+    const voteSuccessful = await handleSubmit(vote, name);
+    if (voteSuccessful) {
+      alert("Thanks for submitting!");
+    } else {
+      alert("Please try again and contact the admin if the issue persists.");
+    }
   } else {
     alert("Choose Again!");
   }
@@ -129,16 +138,47 @@ function setAttributes(element, attributes) {
   });
 }
 
-function populatePlaylists() {
-  const attributes = {
-    src: "https://www.youtube.com/embed/YQHsXMglC9A",
-    referrerpolicy: "strict-origin-when-cross-origin",
+async function handleSubmit(vote, name) {
+  const payload = {
+    RoundId: activeRound,
+    VoterName: name,
+    Voted: vote,
+    Time: new Date().toISOString(),
   };
 
-  const iframe = document.createElement("iframe");
-  setAttributes(iframe, attributes);
-  container.appendChild(iframe);
+  try {
+    const url = `https://script.google.com/macros/s/${key}/exec`;
+    console.log(JSON.stringify(payload));
+    console.log(url);
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error: ${response.status}`);
+    }
+
+    const data = await response.json();
+    console.log(data);
+
+    return data.success === true;
+  } catch (error) {
+    console.error("Submission failed:", error);
+    return false;
+  }
 }
+
+if (existingName) {
+  nameInput.value = existingName;
+}
+
+nameInput.addEventListener("focusout", () => {
+  localStorage.setItem("name", nameInput.value);
+});
 
 createRoundButtons();
 createRoundViews();
