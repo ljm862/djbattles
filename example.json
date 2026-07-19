@@ -2,97 +2,97 @@
   {
     "RoundId": 1,
     "SongId": 1,
-    "Person A": "Jbsundown",
+    "PersonA": "Jbsundown",
     "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "Person B": "Lasskiva",
+    "PersonB": "Lasskiva",
     "URLB": "https://www.youtube.com/watch?v=FP808MiJUcM"
   },
   {
     "RoundId": 1,
     "SongId": 2,
-    "Person A": "Jbsundown",
+    "PersonA": "Jbsundown",
     "URLA": "https://www.youtube.com/watch?v=o-0ygW-B_gI",
-    "Person B": "Lasskiva",
+    "PersonB": "Lasskiva",
     "URLB": "https://www.youtube.com/watch?v=lDK9QqIzhwk"
   },
   {
     "RoundId": 1,
     "SongId": 3,
-    "Person A": "Jbsundown",
+    "PersonA": "Jbsundown",
     "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "Person B": "Lasskiva",
+    "PersonB": "Lasskiva",
     "URLB": "https://www.youtube.com/watch?v=FP808MiJUcM"
   },
   {
     "RoundId": 1,
     "SongId": 4,
-    "Person A": "Jbsundown",
+    "PersonA": "Jbsundown",
     "URLA": "https://www.youtube.com/watch?v=o-0ygW-B_gI",
-    "Person B": "Lasskiva",
+    "PersonB": "Lasskiva",
     "URLB": "https://www.youtube.com/watch?v=lDK9QqIzhwk"
   },
   {
     "RoundId": 1,
     "SongId": 5,
-    "Person A": "Jbsundown",
+    "PersonA": "Jbsundown",
     "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "Person B": "Lasskiva",
+    "PersonB": "Lasskiva",
     "URLB": "https://www.youtube.com/watch?v=FP808MiJUcM"
   },
   {
     "RoundId": 1,
     "SongId": 6,
-    "Person A": "Jbsundown",
+    "PersonA": "Jbsundown",
     "URLA": "https://www.youtube.com/watch?v=o-0ygW-B_gI",
-    "Person B": "Lasskiva",
+    "PersonB": "Lasskiva",
     "URLB": "https://www.youtube.com/watch?v=lDK9QqIzhwk"
   },
   {
     "RoundId": 2,
     "SongId": 1,
-    "Person A": "kallisto",
+    "PersonA": "kallisto",
     "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "Person B": "5qwerty",
+    "PersonB": "5qwerty",
     "URLB": "https://www.youtube.com/watch?v=dN3gax_Z7tw"
   },
   {
     "RoundId": 2,
     "SongId": 2,
-    "Person A": "kallisto",
+    "PersonA": "kallisto",
     "URLA": "https://www.youtube.com/watch?v=Af0P6XEkI7Y",
-    "Person B": "5qwerty",
+    "PersonB": "5qwerty",
     "URLB": "https://www.youtube.com/watch?v=dLl4PZtxia8"
   },
   {
     "RoundId": 2,
     "SongId": 3,
-    "Person A": "kallisto",
+    "PersonA": "kallisto",
     "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "Person B": "5qwerty",
+    "PersonB": "5qwerty",
     "URLB": "https://www.youtube.com/watch?v=dN3gax_Z7tw"
   },
   {
     "RoundId": 2,
     "SongId": 4,
-    "Person A": "kallisto",
+    "PersonA": "kallisto",
     "URLA": "https://www.youtube.com/watch?v=Af0P6XEkI7Y",
-    "Person B": "5qwerty",
+    "PersonB": "5qwerty",
     "URLB": "https://www.youtube.com/watch?v=dLl4PZtxia8"
   },
   {
     "RoundId": 2,
     "SongId": 5,
-    "Person A": "kallisto",
+    "PersonA": "kallisto",
     "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "Person B": "5qwerty",
+    "PersonB": "5qwerty",
     "URLB": "https://www.youtube.com/watch?v=dN3gax_Z7tw"
   },
   {
     "RoundId": 2,
     "SongId": 6,
-    "Person A": "kallisto",
+    "PersonA": "kallisto",
     "URLA": "https://www.youtube.com/watch?v=Af0P6XEkI7Y",
-    "Person B": "5qwerty",
+    "PersonB": "5qwerty",
     "URLB": "https://www.youtube.com/watch?v=dLl4PZtxia8"
   }
 ]

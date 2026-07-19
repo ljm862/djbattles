@@ -1,13 +1,19 @@
-#choice-container {
-  display: flex;
-  flex-direction: row;
-  width: 90vw;
-  margin: auto;
-  justify-content: space-between;
-  margin-top: 20px;
+.hidden {
+  display: none !important;
 }
 
-.choice {
+.battle-container,
+.voting-container {
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 5px;
+  gap: 50px;
+}
+
+.playlist {
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -15,10 +21,21 @@
 }
 
 iframe {
-  height: 400px;
-  margin-bottom: 20px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
 }
 
-button {
+.voting-container button {
+  width: 100%;
   height: 50px;
+}
+
+#round-buttons {
+  margin-top: 20px;
+}
+
+#round-buttons button {
+  margin-right: 5px;
+  height: 30px;
 }

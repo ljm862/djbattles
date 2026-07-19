@@ -1,0 +1,5 @@
+- Playlist vs Playlist
+- View all songs in Playlist
+- Button picks Playlist
+- List of matches per round
+- User goes through all thens submits to endpoint
