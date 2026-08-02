@@ -59,6 +59,14 @@ iframe {
   animation: spin 0.8s linear infinite;
 }
 
+.active-round {
+  background-color: yellow;
+}
+
+.voting-header {
+  text-align: center;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);

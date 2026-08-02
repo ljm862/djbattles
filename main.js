@@ -32,6 +32,13 @@ function createRoundButtons() {
         activeContainer.classList.toggle("active-container");
       }
 
+      const activeRoundButton = document.querySelector(".active-round");
+      if (activeRoundButton) {
+        activeRoundButton.classList.toggle("active-round");
+      }
+
+      viewButton.classList.add("active-round");
+
       const container = document.querySelector(`[container-id="${roundId}"]`);
 
       if (container.dataset.loaded === "false") {
@@ -82,6 +89,11 @@ function populateContainer(container) {
 
 function populateVotingButtons(container, PersonA, PersonB) {
   const containerId = container.getAttribute("container-id");
+
+  const votingHeader = document.createElement("h1");
+  votingHeader.textContent = "Please Select A Playlist To Vote For";
+  votingHeader.classList.add("voting-header");
+  container.appendChild(votingHeader);
 
   const votingContainer = document.createElement("div");
   votingContainer.setAttribute("voting-container-id", `${containerId}`);
