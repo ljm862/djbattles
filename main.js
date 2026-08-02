@@ -1,4 +1,4 @@
-import data from "./example.json" with { type: "json" };
+import data from "./data.json" with { type: "json" };
 
 const key = "AKfycbz8wAfT4ccaIi4sUEoAOKIkZc4qWta1fnbyZ9iK-fVKImdmow5k0By1xedi9H7YoVjr";
 const roundIds = new Set(data.map(({ RoundId }) => RoundId));
