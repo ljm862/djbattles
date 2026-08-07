@@ -15,3 +15,4 @@ import { createRoundViews } from "./scripts/createRoundViews.js";
 
 createRoundButtons();
 createRoundViews();
+document.querySelector(".round-button").click();
