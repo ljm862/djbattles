@@ -9,10 +9,6 @@ export function createRoundViews() {
     container.setAttribute("container-id", round);
     addClassesToElement(container, ["container", "hidden"]);
 
-    const heading = document.createElement("h1");
-    heading.textContent = `Round: ${round}`;
-    container.appendChild(heading);
-
     container.dataset.loaded = "false";
     document.body.appendChild(container);
   });

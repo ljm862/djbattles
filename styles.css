@@ -1,16 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+body {
+  color: white;
+  font-family: sans-serif;
+  background-color: #2a2722;
+}
+
+iframe {
+  width: 45%;
+  background: #fffef7;
+  padding: 10px;
+  margin: 0;
+  border: none;
+}
+
 .hidden {
   display: none !important;
+}
+
+.heading-text {
+  text-align: center;
 }
 
 .battle-container,
 .voting-container {
   display: flex;
   flex-direction: row;
-  width: 60vw;
+  max-width: 100%;
   margin: auto;
   justify-content: space-between;
-  margin-top: 5px;
-  gap: 50px;
+  gap: 5px;
+  background: #e4dfd5;
+  padding: 10px;
+  border-radius: 1px;
+}
+
+.voting-container {
+  background: none !important;
 }
 
 .playlist {
@@ -18,12 +44,6 @@
   display: flex;
   flex-direction: column;
   width: 50%;
-}
-
-iframe {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 5px;
 }
 
 .voting-container button {
@@ -36,8 +56,14 @@ iframe {
 }
 
 #round-buttons button {
-  margin-right: 5px;
   height: 30px;
+}
+
+button {
+  background: white;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15px;
 }
 
 .loading-screen {
@@ -60,15 +86,42 @@ iframe {
 }
 
 .active-round {
-  background-color: yellow;
+  background-color: yellow !important;
 }
 
 .voting-header {
   text-align: center;
 }
 
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .battle-container,
+  .voting-container {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .battle-container,
+  .voting-container {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .battle-container,
+  .voting-container {
+    max-width: 40%;
   }
 }
