@@ -21,11 +21,13 @@ export function populateVotingButtons(container, PersonA, PersonB) {
   const votingButtonA = document.createElement("button");
   votingButtonA.setAttribute("voting-button-id", 1);
   votingButtonA.textContent = `Playlist - ${useRealName ? PersonA : "A"}`;
+  addClassesToElement(votingButtonA, ["permanent-marker-regular"]);
 
   // Voting Button B
   const votingButtonB = document.createElement("button");
   votingButtonB.setAttribute("voting-button-id", 2);
   votingButtonB.textContent = `Playlist - ${useRealName ? PersonB : "B"}`;
+  addClassesToElement(votingButtonB, ["permanent-marker-regular"]);
 
   // Add Listeners To Buttons
   [votingButtonA, votingButtonB].forEach((button) => {

@@ -7,7 +7,7 @@ export function createRoundButtons() {
     // Create Round Button
     const viewButton = document.createElement("button");
     viewButton.setAttribute("button-id", round);
-    addClassesToElement(viewButton, ["round-button"]);
+    addClassesToElement(viewButton, ["round-button", "permanent-marker-regular"]);
     viewButton.textContent = `Round: ${round}`;
 
     // Handle Round Button Click
