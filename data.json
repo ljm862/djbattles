@@ -1,98 +1,42 @@
 [
-  {
-    "RoundId": 1,
-    "SongId": 1,
-    "PersonA": "Jbsundown",
-    "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "PersonB": "Lasskiva",
-    "URLB": "https://www.youtube.com/watch?v=FP808MiJUcM"
-  },
-  {
-    "RoundId": 1,
-    "SongId": 2,
-    "PersonA": "Jbsundown",
-    "URLA": "https://www.youtube.com/watch?v=o-0ygW-B_gI",
-    "PersonB": "Lasskiva",
-    "URLB": "https://www.youtube.com/watch?v=lDK9QqIzhwk"
-  },
-  {
-    "RoundId": 1,
-    "SongId": 3,
-    "PersonA": "Jbsundown",
-    "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "PersonB": "Lasskiva",
-    "URLB": "https://www.youtube.com/watch?v=FP808MiJUcM"
-  },
-  {
-    "RoundId": 1,
-    "SongId": 4,
-    "PersonA": "Jbsundown",
-    "URLA": "https://www.youtube.com/watch?v=o-0ygW-B_gI",
-    "PersonB": "Lasskiva",
-    "URLB": "https://www.youtube.com/watch?v=lDK9QqIzhwk"
-  },
-  {
-    "RoundId": 1,
-    "SongId": 5,
-    "PersonA": "Jbsundown",
-    "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "PersonB": "Lasskiva",
-    "URLB": "https://www.youtube.com/watch?v=FP808MiJUcM"
-  },
-  {
-    "RoundId": 1,
-    "SongId": 6,
-    "PersonA": "Jbsundown",
-    "URLA": "https://www.youtube.com/watch?v=o-0ygW-B_gI",
-    "PersonB": "Lasskiva",
-    "URLB": "https://www.youtube.com/watch?v=lDK9QqIzhwk"
-  },
-  {
-    "RoundId": 2,
-    "SongId": 1,
-    "PersonA": "kallisto",
-    "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "PersonB": "5qwerty",
-    "URLB": "https://www.youtube.com/watch?v=dN3gax_Z7tw"
-  },
-  {
-    "RoundId": 2,
-    "SongId": 2,
-    "PersonA": "kallisto",
-    "URLA": "https://www.youtube.com/watch?v=Af0P6XEkI7Y",
-    "PersonB": "5qwerty",
-    "URLB": "https://www.youtube.com/watch?v=dLl4PZtxia8"
-  },
-  {
-    "RoundId": 2,
-    "SongId": 3,
-    "PersonA": "kallisto",
-    "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "PersonB": "5qwerty",
-    "URLB": "https://www.youtube.com/watch?v=dN3gax_Z7tw"
-  },
-  {
-    "RoundId": 2,
-    "SongId": 4,
-    "PersonA": "kallisto",
-    "URLA": "https://www.youtube.com/watch?v=Af0P6XEkI7Y",
-    "PersonB": "5qwerty",
-    "URLB": "https://www.youtube.com/watch?v=dLl4PZtxia8"
-  },
-  {
-    "RoundId": 2,
-    "SongId": 5,
-    "PersonA": "kallisto",
-    "URLA": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
-    "PersonB": "5qwerty",
-    "URLB": "https://www.youtube.com/watch?v=dN3gax_Z7tw"
-  },
-  {
-    "RoundId": 2,
-    "SongId": 6,
-    "PersonA": "kallisto",
-    "URLA": "https://www.youtube.com/watch?v=Af0P6XEkI7Y",
-    "PersonB": "5qwerty",
-    "URLB": "https://www.youtube.com/watch?v=dLl4PZtxia8"
-  }
+ {
+   "RoundId": 1,
+   "SongId": 1,
+   "Person A": "Participant 1",
+   "URLA": "https://www.youtube.com/watch?v=n3AjxQ0xqHQ&pp=ygVXVGhlIExlZ2VuZCBvZiBaZWxkYSAtIFNvbmcgb2YgU3Rvcm1zIC8gV2luZG1pbGwgSHV0IOOAkEludGVuc2UgU3ltcGhvbmljIE1ldGFsIENvdmVy44CR",
+   "Person B": "Participant 3",
+   "URLB": "https://www.youtube.com/watch?v=7lLigiVgJsE&list=RD7lLigiVgJsE&start_radio=1"
+ },
+ {
+   "RoundId": 1,
+   "SongId": 2,
+   "Person A": "Participant 1",
+   "URLA": "https://www.youtube.com/watch?v=36Vs_JoIvjA",
+   "Person B": "Participant 3",
+   "URLB": "https://youtube.com/watch?v=qXpUjfxVLLI"
+ },
+ {
+   "RoundId": 1,
+   "SongId": 3,
+   "Person A": "Participant 1",
+   "URLA": "https://www.youtube.com/watch?v=-F44NxiGAqg",
+   "Person B": "Participant 3",
+   "URLB": "https://www.youtube.com/watch?v=XdM_xhHgv5U"
+ },
+ {
+   "RoundId": 1,
+   "SongId": 4,
+   "Person A": "Participant 1",
+   "URLA": "https://www.youtube.com/watch?v=3onA_XzUu8k",
+   "Person B": "Participant 3",
+   "URLB": "https://www.youtube.com/watch?v=moGyyrZsFPM"
+ },
+ {
+   "RoundId": 1,
+   "SongId": 5,
+   "Person A": "Participant 1",
+   "URLA": "https://www.youtube.com/watch?v=HJq3m-Ck2FI",
+   "Person B": "Participant 3",
+   "URLB": "https://www.youtube.com/watch?v=moGyyrZsFPM"
+ }
 ]
