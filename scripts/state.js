@@ -7,7 +7,7 @@ export function setActiveRound(round) {
 
 export const data = json,
   existingName = localStorage.getItem("name"),
-  key = "AKfycbz8wAfT4ccaIi4sUEoAOKIkZc4qWta1fnbyZ9iK-fVKImdmow5k0By1xedi9H7YoVjr",
+  key = "AKfycbxuYNwBMavBuxn9kt8uqZ8-2jbRq1P2FYNboRDtW8h5VWryF4I2-aOz0TCUbADc-2q5",
   nameInput = document.querySelector("input"),
   referrerpolicy = "strict-origin-when-cross-origin",
   roundButtons = document.querySelector("#round-buttons"),
