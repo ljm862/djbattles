@@ -3,7 +3,7 @@
    "RoundId": 1,
    "SongId": 1,
    "Person A": "Participant 14",
-   "URLA": "https://youtube.com/wz41Vbs1CSc?si=Nt-FCYowsVZPzvJ-",
+   "URLA": "https://youtube.com/watch?v=wz41Vbs1CSc",
    "Person B": "Participant 1",
    "URLB": "https://www.youtube.com/watch?v=n3AjxQ0xqHQ"
  },
@@ -11,7 +11,7 @@
    "RoundId": 1,
    "SongId": 2,
    "Person A": "Participant 14",
-   "URLA": "https://youtube.com/swloMVFALXw?si=TGqRN9j3Rnnn3fxd",
+   "URLA": "https://youtube.com/watch?v=swloMVFALXw",
    "Person B": "Participant 1",
    "URLB": "https://www.youtube.com/watch?v=36Vs_JoIvjA"
  },
@@ -19,7 +19,7 @@
    "RoundId": 1,
    "SongId": 3,
    "Person A": "Participant 14",
-   "URLA": "https://youtube.com/0yBnIUX0QAE?si=2JU3BTyN2S7IwMMo",
+   "URLA": "https://youtube.com/watch?v=0yBnIUX0QAE",
    "Person B": "Participant 1",
    "URLB": "https://www.youtube.com/watch?v=-F44NxiGAqg"
  },
@@ -27,7 +27,7 @@
    "RoundId": 1,
    "SongId": 4,
    "Person A": "Participant 14",
-   "URLA": "https://youtube.com/wO8yyYhgt4k?si=mvD3aShWUvSkJTKJ",
+   "URLA": "https://youtube.com/watch?v=wO8yyYhgt4k",
    "Person B": "Participant 1",
    "URLB": "https://www.youtube.com/watch?v=3onA_XzUu8k"
  },
@@ -35,7 +35,7 @@
    "RoundId": 1,
    "SongId": 5,
    "Person A": "Participant 14",
-   "URLA": "https://youtube.com/wvsP_lzh2-8?si=EUaZFB_BKwi9iyA1",
+   "URLA": "https://youtube.com/watch?v=wvsP_lzh2-8",
    "Person B": "Participant 1",
    "URLB": "https://www.youtube.com/watch?v=HJq3m-Ck2FI"
  },
@@ -205,7 +205,7 @@
    "Person A": "Participant 8",
    "URLA": "https://www.youtube.com/watch?v=FTQbiNvZqaY",
    "Person B": "Participant 9",
-   "URLB": "https://youtube.com/AoAm4om0wTs?is=JP7kRT5p8KreFYJM"
+   "URLB": "https://youtube.com/watch?v=AoAm4om0wTs"
  },
  {
    "RoundId": 6,
@@ -213,7 +213,7 @@
    "Person A": "Participant 8",
    "URLA": "https://www.youtube.com/watch?v=TzFnYcIqj6I",
    "Person B": "Participant 9",
-   "URLB": "https://youtube.com/CvBfHwUxHIk?is=rM5EJQ8fMbGzCTV_"
+   "URLB": "https://youtube.com/watch?v=CvBfHwUxHIk"
  },
  {
    "RoundId": 6,
@@ -221,7 +221,7 @@
    "Person A": "Participant 8",
    "URLA": "https://www.youtube.com/watch?v=RD5b_0QB0wI",
    "Person B": "Participant 9",
-   "URLB": "https://youtube.com/swloMVFALXw?is=LXthiNDJNyaGZUer"
+   "URLB": "https://youtube.com/watch?v=swloMVFALXw"
  },
  {
    "RoundId": 6,
@@ -229,7 +229,7 @@
    "Person A": "Participant 8",
    "URLA": "https://www.youtube.com/watch?v=15kWlTrpt5k",
    "Person B": "Participant 9",
-   "URLB": "https://youtube.com/4a-SEPT8DeE?is=Lij04S-ZGAYRQK96"
+   "URLB": "https://youtube.com/watch?v=4a-SEPT8DeE"
  },
  {
    "RoundId": 6,
@@ -237,7 +237,7 @@
    "Person A": "Participant 8",
    "URLA": "https://www.youtube.com/watch?v=BI5IA8assfk",
    "Person B": "Participant 9",
-   "URLB": "https://youtube.com/l5aZJBLAu1E?is=R3BWXTyk9xuuj43G"
+   "URLB": "https://youtube.com/watch?v=l5aZJBLAu1E"
  },
  {
    "RoundId": 7,
@@ -245,7 +245,7 @@
    "Person A": "Participant 3",
    "URLA": "https://www.youtube.com/watch?v=7lLigiVgJsE",
    "Person B": "Participant 11",
-   "URLB": "https://youtube.com/ObEOvFpysiM?si=a7z7HmZO-M93WTXc"
+   "URLB": "https://youtube.com/watch?v=ObEOvFpysiM"
  },
  {
    "RoundId": 7,
@@ -253,7 +253,7 @@
    "Person A": "Participant 3",
    "URLA": "https://www.youtube.com/watch?v=DeavKUSucsE",
    "Person B": "Participant 11",
-   "URLB": "https://youtube.com/SmM0653YvXU?si=yjMU2Qysyh1CewAa"
+   "URLB": "https://youtube.com/watch?v=SmM0653YvXU"
  },
  {
    "RoundId": 7,
@@ -261,7 +261,7 @@
    "Person A": "Participant 3",
    "URLA": "https://www.youtube.com/watch?v=dc-nyGo0aC8",
    "Person B": "Participant 11",
-   "URLB": "https://youtube.com/CvBfHwUxHIk?si=uNz7R71VFYDfsVHG"
+   "URLB": "https://youtube.com/watch?v=CvBfHwUxHIk"
  },
  {
    "RoundId": 7,
@@ -269,7 +269,7 @@
    "Person A": "Participant 3",
    "URLA": "https://www.youtube.com/watch?v=3ymwOvzhwHs",
    "Person B": "Participant 11",
-   "URLB": "https://youtube.com/49I6JrUnSQg?si=AnZaJvZ6mBDSOCOJ"
+   "URLB": "https://youtube.com/watch?v=49I6JrUnSQg"
  },
  {
    "RoundId": 7,
@@ -277,7 +277,7 @@
    "Person A": "Participant 3",
    "URLA": "https://www.youtube.com/watch?v=tCXGJQYZ9JA",
    "Person B": "Participant 11",
-   "URLB": "https://youtube.com/KTlKyLa7ZLg?si=P67x_GE1XXf-sl_i"
+   "URLB": "https://youtube.com/watch?v=KTlKyLa7ZLg"
  },
  {
    "RoundId": 8,
