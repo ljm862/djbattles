@@ -5,14 +5,17 @@ export function setActiveRound(round) {
   activeRound = round;
 }
 
-export const data = json,
+export const completedRounds = JSON.parse(localStorage.getItem("completed-rounds")) ?? [],
+  data = json,
   existingName = localStorage.getItem("name"),
   key = "AKfycbxuYNwBMavBuxn9kt8uqZ8-2jbRq1P2FYNboRDtW8h5VWryF4I2-aOz0TCUbADc-2q5",
   nameInput = document.querySelector("input"),
   referrerpolicy = "strict-origin-when-cross-origin",
   roundButtons = document.querySelector("#round-buttons"),
-  roundIds = new Set(data.map(({ RoundId }) => RoundId)),
+  roundIds = [...new Set(data.map(({ RoundId }) => RoundId))],
   useRealName = false;
+
+history.scrollRestoration = "manual";
 
 // Pre-populate name field from local storage and handle change
 if (existingName) {
