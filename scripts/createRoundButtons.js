@@ -1,4 +1,11 @@
-import { activeRound, completedRounds, roundIds, roundButtons, setActiveRound } from "./state.js";
+import {
+  activeRound,
+  completedRounds,
+  existingName,
+  roundIds,
+  roundButtons,
+  setActiveRound,
+} from "./state.js";
 import { addClassesToElement, toggleClassesOnElement } from "./utils.js";
 import { populateContainer } from "./populateContainer.js";
 
@@ -46,4 +53,21 @@ export function createRoundButtons() {
       // Append Round Buttons
       roundButtons.appendChild(viewButton);
     });
+
+  if (["DEVTEST"].includes(existingName)) {
+    const refreshButton = document.createElement("button");
+    refreshButton.textContent = "Refresh Rounds";
+    refreshButton.addEventListener("click", () => {
+      if (window.confirm(`ONLY CLICK THIS IF INSTRUCTED TO`)) {
+        const existingName = localStorage.getItem("name") ?? "";
+        localStorage.clear();
+        localStorage.setItem("name", existingName);
+        document.location.reload();
+      } else {
+        alert("Good Idea");
+      }
+    });
+    addClassesToElement(refreshButton, "round-button");
+    roundButtons.appendChild(refreshButton);
+  }
 }
