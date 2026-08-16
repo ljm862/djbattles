@@ -10,49 +10,52 @@ import { addClassesToElement, toggleClassesOnElement } from "./utils.js";
 import { populateContainer } from "./populateContainer.js";
 
 export function createRoundButtons() {
-  roundIds
-    .filter((id) => !completedRounds.includes(`${id}`))
-    .forEach((round) => {
-      // Create Round Button
-      const viewButton = document.createElement("button");
-      viewButton.setAttribute("button-id", round);
-      addClassesToElement(viewButton, ["round-button", "permanent-marker-regular"]);
-      viewButton.textContent = `Round: ${round}`;
+  roundIds.forEach((round) => {
+    // Create Round Button
+    const viewButton = document.createElement("button");
+    viewButton.setAttribute("button-id", round);
+    addClassesToElement(viewButton, ["round-button", "permanent-marker-regular"]);
+    viewButton.textContent = `Round: ${round}`;
 
-      // Handle Round Button Click
-      viewButton.addEventListener("click", (e) => {
-        const roundId = e.target.getAttribute("button-id");
-        if (roundId == activeRound) {
-          alert("Round already active!");
-          return;
-        }
-        setActiveRound(roundId);
+    const roundAlreadyVoted = completedRounds.includes(`${round}`);
+    if (roundAlreadyVoted) {
+      addClassesToElement(viewButton, ["voted"]);
+    }
 
-        // Handle UI Changes
-        const activeContainer = document.querySelector(".active-container");
-        if (activeContainer) {
-          toggleClassesOnElement(activeContainer, ["hidden", "active-container"]);
-        }
+    // Handle Round Button Click
+    viewButton.addEventListener("click", (e) => {
+      const roundId = e.target.getAttribute("button-id");
+      if (roundId == activeRound) {
+        alert("Round already active!");
+        return;
+      }
+      setActiveRound(roundId);
 
-        const activeRoundButton = document.querySelector(".active-round");
-        if (activeRoundButton) {
-          toggleClassesOnElement(activeRoundButton, ["active-round"]);
-        }
+      // Handle UI Changes
+      const activeContainer = document.querySelector(".active-container");
+      if (activeContainer) {
+        toggleClassesOnElement(activeContainer, ["hidden", "active-container"]);
+      }
 
-        addClassesToElement(viewButton, ["active-round"]);
-        const container = document.querySelector(`[container-id="${roundId}"]`);
+      const activeRoundButton = document.querySelector(".active-round");
+      if (activeRoundButton) {
+        toggleClassesOnElement(activeRoundButton, ["active-round"]);
+      }
 
-        if (container.dataset.loaded === "false") {
-          populateContainer(container);
-          container.dataset.loaded = "true";
-        }
+      addClassesToElement(viewButton, ["active-round"]);
+      const container = document.querySelector(`[container-id="${roundId}"]`);
 
-        toggleClassesOnElement(container, ["hidden", "active-container"]);
-      });
+      if (container.dataset.loaded === "false") {
+        populateContainer(container);
+        container.dataset.loaded = "true";
+      }
 
-      // Append Round Buttons
-      roundButtons.appendChild(viewButton);
+      toggleClassesOnElement(container, ["hidden", "active-container"]);
     });
+
+    // Append Round Buttons
+    roundButtons.appendChild(viewButton);
+  });
 
   if (["DEVTEST"].includes(existingName)) {
     const refreshButton = document.createElement("button");
