@@ -1,14 +1,17 @@
-import { useRealName } from "./state.js";
+import { activeRound, completedRounds, useRealName } from "./state.js";
 
 import { addClassesToElement } from "./utils.js";
 import { handleVoteClick } from "./handleVoteClick.js";
 
 export function populateVotingButtons(container, PersonA, PersonB) {
+  const roundAlreadyVoted = completedRounds.includes(activeRound);
   const containerId = container.getAttribute("container-id");
 
   // Voting Header
   const votingHeader = document.createElement("h1");
-  votingHeader.textContent = "Please Select A Playlist To Vote For";
+  votingHeader.textContent = roundAlreadyVoted
+    ? "You Have Already Voted"
+    : "Please Select A Playlist To Vote For";
   addClassesToElement(votingHeader, ["voting-header"]);
   container.appendChild(votingHeader);
 
@@ -28,6 +31,13 @@ export function populateVotingButtons(container, PersonA, PersonB) {
   votingButtonB.setAttribute("voting-button-id", 2);
   votingButtonB.textContent = `Playlist - ${useRealName ? PersonB : "B"}`;
   addClassesToElement(votingButtonB, ["permanent-marker-regular"]);
+
+  if (roundAlreadyVoted) {
+    votingButtonA.setAttribute("disabled", "");
+    votingButtonB.setAttribute("disabled", "");
+    addClassesToElement(votingButtonA, ["disabled"]);
+    addClassesToElement(votingButtonB, ["disabled"]);
+  }
 
   // Add Listeners To Buttons
   [votingButtonA, votingButtonB].forEach((button) => {

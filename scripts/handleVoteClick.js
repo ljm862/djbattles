@@ -1,4 +1,4 @@
-import { activeRound, completedRounds } from "./state.js";
+import { activeRound, completedRounds, localStorageKey } from "./state.js";
 import { handleSubmit } from "./handleSubmit.js";
 
 export async function handleVoteClick({ target }) {
@@ -19,7 +19,7 @@ export async function handleVoteClick({ target }) {
     loader.style.display = "flex";
     const voteSuccessful = await handleSubmit(target.getAttribute("voting-button-id"), name);
     completedRounds.push(activeRound);
-    localStorage.setItem("completed-rounds", JSON.stringify(completedRounds));
+    localStorage.setItem(localStorageKey, JSON.stringify(completedRounds));
     if (voteSuccessful) {
       alert("Thanks for submitting!");
       document.location.reload();

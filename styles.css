@@ -25,6 +25,14 @@ button:hover {
   display: none !important;
 }
 
+.disabled {
+  cursor: not-allowed;
+}
+
+.voted {
+  background: green;
+}
+
 .heading-text {
   text-align: center;
 }
