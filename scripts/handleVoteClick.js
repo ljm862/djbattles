@@ -1,3 +1,4 @@
+import { activeRound, completedRounds } from "./state.js";
 import { handleSubmit } from "./handleSubmit.js";
 
 export async function handleVoteClick({ target }) {
@@ -17,8 +18,11 @@ export async function handleVoteClick({ target }) {
 
     loader.style.display = "flex";
     const voteSuccessful = await handleSubmit(target.getAttribute("voting-button-id"), name);
+    completedRounds.push(activeRound);
+    localStorage.setItem("completed-rounds", JSON.stringify(completedRounds));
     if (voteSuccessful) {
       alert("Thanks for submitting!");
+      document.location.reload();
     } else {
       alert("Please try again and contact the admin if the issue persists.");
     }
